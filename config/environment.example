@@ -1,0 +1,22 @@
+# Copy this file to .env for a self-hosted deployment.
+# Do not commit the resulting .env file.
+
+# Database configuration (MySQL-compatible; leave unset to run without a
+# database, in which case research sessions are not persisted)
+DATABASE_URL=mysql://USER:PASSWORD@HOST:3306/evidence_studio
+
+# Secret used to sign session cookies. Generate a long random value, e.g.
+# `openssl rand -hex 32`.
+JWT_SECRET=replace-with-a-long-random-secret
+
+# Optional access code that visitors must enter to sign in. Leave blank to
+# let anyone with the app URL sign in with any name (suitable for trusted
+# networks).
+ADMIN_CODE=
+
+# Server listening port (defaults to 3000)
+PORT=3000
+
+# External provider keys are intentionally not configured here.
+# Users supply OpenAI, Anthropic, Gemini, and Groq keys in the in-app
+# provider panel for the current browser session only.

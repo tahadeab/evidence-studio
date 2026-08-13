@@ -1,0 +1,2 @@
+ALTER TABLE `provider_preferences` MODIFY COLUMN `provider` enum('openai','anthropic','gemini','groq') NOT NULL;--> statement-breakpoint
+ALTER TABLE `research_tasks` MODIFY COLUMN `provider` enum('openai','anthropic','gemini','groq') NOT NULL;

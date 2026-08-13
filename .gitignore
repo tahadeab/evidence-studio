@@ -1,0 +1,25 @@
+# Dependencies and build output
+node_modules/
+dist/
+.vite/
+coverage/
+
+# Environment and credentials
+.env
+.env.*
+!.env.example
+
+# Local tooling and logs
+.manus-logs/
+.manus/
+.project-config.json
+
+*.log
+*.tsbuildinfo
+
+# OS and editor artifacts
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
